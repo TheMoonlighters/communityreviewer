@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="CommunityReviewer">
+  <defs>
+    <linearGradient id="crBubble" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5AA9EF"/>
+      <stop offset="1" stop-color="#263397"/>
+    </linearGradient>
+  </defs>
+  <g fill="url(#crBubble)">
+    <rect x="4" y="4" width="56" height="44" rx="12"/>
+    <path d="M20 44 L20 60 L35 44 Z"/>
+  </g>
+  <path fill="#F8D481" d="M32 12 L35.53 21.15 L45.32 21.67 L37.71 27.85 L40.23 37.33 L32 32 L23.77 37.33 L26.29 27.85 L18.68 21.67 L28.47 21.15 Z"/>
+</svg>

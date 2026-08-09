@@ -50,16 +50,7 @@ img { max-width: 100%; }
   display: flex; align-items: center; justify-content: space-between;
   height: 62px; gap: 24px;
 }
-.logo {
-  font-size: 24px; font-weight: 900; letter-spacing: -0.5px; color: var(--ink);
-}
-.logo:hover { text-decoration: none; }
-.logo .l1 { color: var(--sk-red); }
-.logo .l2 { color: var(--sk-gold); }
-.logo .l3 { color: var(--sk-sky); }
-.logo .l4 { color: var(--sk-navy); }
-.logo .l5 { color: var(--sk-rust); }
-.logo .lr { color: var(--ink); font-weight: 700; }
+
 .site-nav { display: flex; gap: 26px; align-items: center; }
 .site-nav a { color: var(--ink-faint); font-size: 15px; font-weight: 500; }
 .site-nav a:hover { color: var(--ink); text-decoration: none; }
@@ -293,3 +284,12 @@ textarea { resize: vertical; min-height: 110px; }
   .section { padding: 34px 0; }
   .form-card { padding: 22px; }
 }
+
+/* ---------- Logo ---------- */
+.logo { display: flex; align-items: center; gap: 9px; text-decoration: none; }
+.logo:hover { text-decoration: none; }
+.logo-mark { width: 30px; height: 30px; flex-shrink: 0; display: block; }
+.logo-word { font-size: 21px; font-weight: 800; letter-spacing: -0.5px; line-height: 1; }
+.logo-word b { color: #1f2a6e; font-weight: 800; }
+.logo-word span { color: var(--ink-faint); font-weight: 600; }
+@media (max-width: 420px) { .logo-word { font-size: 18px; } .logo-mark { width: 26px; height: 26px; } }

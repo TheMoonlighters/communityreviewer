@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="CommunityReviewer">
+  <defs>
+    <linearGradient id="crFav" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5AA9EF"/>
+      <stop offset="1" stop-color="#263397"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="64" height="64" rx="14" fill="url(#crFav)"/>
+  <path fill="#F8D481" d="M32 11 L36.35 22.28 L48.42 23.0 L39.04 30.62 L42.06 42.3 L32 35.75 L21.94 42.3 L24.96 30.62 L15.58 23.0 L27.65 22.28 Z"/>
+</svg>
