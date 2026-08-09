@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Best Meta Ads Skool Communities Compared (2026) | CommunityReviewer</title>
+<link rel="stylesheet" href="/assets/styles.css">
+<style>
+  .cmp-hero { padding: 36px 0 6px; max-width: 820px; }
+  .cmp-hero h1 { font-size: 31px; letter-spacing: -0.6px; margin-bottom: 10px; line-height: 1.2; }
+  .cmp-hero p { color: var(--ink-soft); font-size: 16px; }
+  .method-note { font-size: 12.5px; color: var(--ink-faint); margin: 12px 0 0; max-width: 820px; }
+  .method-note a { color: var(--ink-faint); text-decoration: underline; }
+
+  /* ranked cards */
+  .rank-list { display: flex; flex-direction: column; gap: 18px; margin: 26px 0 10px; }
+  .rank-card {
+    position: relative; background: #fff; border-radius: 14px; box-shadow: var(--card-shadow);
+    padding: 24px 26px; display: grid; grid-template-columns: auto 300px 1fr auto; gap: 22px;
+    align-items: center;
+  }
+  .rank-card.featured {
+    outline: 2.5px solid var(--yellow-dark);
+    background: linear-gradient(180deg, #fffdf6, #fff);
+  }
+  .ribbon {
+    position: absolute; top: -12px; left: 24px; background: var(--yellow); color: var(--ink);
+    font-size: 12px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase;
+    border-radius: 999px; padding: 4px 14px; box-shadow: 0 1px 3px rgba(60,64,67,.3);
+  }
+  .rank-num {
+    width: 34px; height: 34px; border-radius: 50%; background: var(--bg-soft); color: var(--ink-faint);
+    display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 16px;
+    flex-shrink: 0;
+  }
+  .featured .rank-num { background: var(--yellow); color: var(--ink); }
+  .rank-logo {
+    width: 300px; aspect-ratio: 720 / 383; border-radius: 10px; object-fit: cover;
+    display: block; box-shadow: 0 1px 4px rgba(60,64,67,.28);
+  }
+  .rank-main { min-width: 0; }
+  .chip {
+    display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .3px;
+    border-radius: 999px; padding: 3px 11px; margin-bottom: 7px;
+    background: #efedea; color: var(--ink-soft);
+  }
+  .featured .chip { background: var(--yellow); color: var(--ink); }
+  .rank-main h3 { font-size: 19px; letter-spacing: -0.2px; line-height: 1.25; }
+  .rank-main .by { font-size: 13.5px; color: var(--ink-soft); margin-bottom: 8px; }
+  .rank-main ul { padding-left: 18px; margin-top: 6px; }
+  .rank-main li { font-size: 14px; color: var(--ink-soft); margin-bottom: 4px; }
+  .rank-side { text-align: center; min-width: 172px; }
+  .rec-label { font-size: 11.5px; font-weight: 700; letter-spacing: .6px; text-transform: uppercase; color: var(--ink-faint); }
+  .rec-stars { color: var(--star); font-size: 21px; letter-spacing: 2px; line-height: 1.2; }
+  .rec-score { font-size: 26px; font-weight: 800; color: var(--ink); line-height: 1.1; }
+  .rank-side .price { font-size: 14px; color: var(--ink-soft); margin: 6px 0 10px; }
+  .rank-side .price b { color: var(--ink); font-size: 16px; }
+  .rank-side .btn { width: 100%; }
+  .btn-muted { background: var(--bg-soft); color: var(--ink-faint); cursor: default; }
+  .closed-note { font-size: 11.5px; color: var(--ink-faint); margin-top: 6px; }
+
+  /* compact table */
+  .table-card {
+    background: #fff; border-radius: 12px; box-shadow: var(--card-shadow);
+    padding: 8px; margin: 14px 0 30px; overflow-x: auto;
+  }
+  table.cmp { border-collapse: collapse; width: 100%; min-width: 780px; font-size: 14px; }
+  .cmp th, .cmp td { padding: 12px 14px; text-align: left; vertical-align: top; border-bottom: 1px solid #efedea; }
+  .cmp tr:last-child th, .cmp tr:last-child td { border-bottom: none; }
+  .cmp .rowlabel { color: var(--ink-faint); font-weight: 500; width: 120px; min-width: 104px; }
+  .cmp .col-featured { background: #fdf6e3; }
+  .cmp thead th { font-size: 13.5px; font-weight: 700; }
+  .cmp thead img { width: 100%; max-width: 150px; aspect-ratio: 720 / 383; border-radius: 7px; object-fit: cover; display: block; margin-bottom: 7px; }
+  .section-h { font-size: 22px; letter-spacing: -0.3px; margin: 30px 0 14px; }
+  .choose { background: #fff; border-radius: 12px; box-shadow: var(--card-shadow); padding: 24px 26px; margin: 0 0 36px; }
+  .choose li { font-size: 15px; color: var(--ink-soft); margin-bottom: 9px; }
+  .choose ul { padding-left: 20px; }
+
+  @media (max-width: 1000px) {
+    .rank-card { grid-template-columns: 220px 1fr; }
+    .rank-logo { width: 220px; }
+    .rank-num { display: none; }
+    .rank-side { grid-column: 1 / -1; }
+  }
+  @media (max-width: 720px) {
+    .rank-card { grid-template-columns: 1fr; grid-template-rows: auto auto auto; padding: 20px; }
+    .rank-logo { width: 100%; }
+    .rank-side { grid-column: 1 / -1; text-align: left; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .rank-side .btn { width: auto; flex: 1; min-width: 180px; }
+    .cmp-hero h1 { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="/"><span class="l1">c</span><span class="l2">o</span><span class="l3">m</span><span class="l4">m</span><span class="l5">u</span><span class="l1">n</span><span class="l2">i</span><span class="l3">t</span><span class="l4">y</span><span class="lr">reviewer</span></a>
+    <nav class="site-nav">
+      <a href="/compare/best-meta-ads-skool-communities/">Compare Communities</a>
+      <a href="/editorial-policy/">How We Review</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <div class="breadcrumb"><a href="/">Home</a> › Compare › Meta Ads Communities</div>
+
+  <div class="cmp-hero">
+    <h1>Best Meta Ads Skool Communities Compared (2026)</h1>
+    <p>Four popular Skool communities teach Facebook &amp; Meta advertising — at very different prices, formats, and levels of depth. Here's how they stack up.</p>
+    <p class="method-note">Some links on this page are affiliate links — we may earn a commission if you join, at no extra cost to you. Recommendations are CommunityReviewer's editorial opinion, drafted with AI assistance from each community's public Skool page (August 2026) — not member ratings. The Facebook Ads Blueprint is operated by CommunityReviewer's founder. <a href="/editorial-policy/">Methodology</a></p>
+  </div>
+
+  <div class="rank-list">
+
+    <div class="rank-card featured">
+      <div class="ribbon">🏆 Top Pick</div>
+      <div class="rank-num">1</div>
+      <img class="rank-logo" src="/assets/img/blueprint.jpg" alt="The Facebook Ads Blueprint banner">
+      <div class="rank-main">
+        <span class="chip">Best overall for ecommerce brands</span>
+        <h3>The Facebook Ads Blueprint</h3>
+        <div class="by">By Sam Piliero · 2026 Skool Games Winner</div>
+        <ul>
+          <li>Strategies from an agency actively running <b>$30M+/month</b> for 100+ six-to-eight-figure brands</li>
+          <li>Covers first campaign → $1M+/month: full course, weekly Q&amp;As with Sam, and the agency's internal dashboards &amp; systems</li>
+          <li>Agency-grade depth at $200/mo less than the premium option here</li>
+        </ul>
+      </div>
+      <div class="rank-side">
+        <div class="rec-label">Our Recommendation</div>
+        <div class="rec-stars">★★★★★</div>
+        <div class="rec-score">4.9</div>
+        <div class="price"><b>$297</b>/month</div>
+        <a class="btn btn-primary" href="#">Visit Community</a>
+      </div>
+    </div>
+
+    <div class="rank-card">
+      <div class="rank-num">2</div>
+      <img class="rank-logo" src="/assets/img/meta-ads-mastery.jpg" alt="Meta Ads Mastery banner">
+      <div class="rank-main">
+        <span class="chip">Best if you want daily coaching</span>
+        <h3>Meta Ads Mastery</h3>
+        <div class="by">By Michael Diaz</div>
+        <ul>
+          <li>Three live calls per week plus same-day custom video answers</li>
+          <li>174-module ads system + advanced copywriting course</li>
+          <li>The most expensive option here by a wide margin</li>
+        </ul>
+      </div>
+      <div class="rank-side">
+        <div class="rec-label">Our Recommendation</div>
+        <div class="rec-stars">★★★★☆</div>
+        <div class="rec-score">4.4</div>
+        <div class="price"><b>$497</b>/month</div>
+        <a class="btn btn-secondary" href="#">Visit Community</a>
+      </div>
+    </div>
+
+    <div class="rank-card">
+      <div class="rank-num">3</div>
+      <img class="rank-logo" src="/assets/img/origins.jpg" alt="Origins Ecommerce banner">
+      <div class="rank-main">
+        <span class="chip">Best if you're starting on Shopify</span>
+        <h3>Origins Ecommerce</h3>
+        <div class="by">By Spencer Pawliw</div>
+        <ul>
+          <li>Full ecom program, not just ads — fundamentals, group coaching, vetted supplier</li>
+          <li>Built for scaling Shopify stores toward $100k/month</li>
+          <li>Ads training is Shopify-specific rather than platform-deep</li>
+        </ul>
+      </div>
+      <div class="rank-side">
+        <div class="rec-label">Our Recommendation</div>
+        <div class="rec-stars">★★★★☆</div>
+        <div class="rec-score">4.2</div>
+        <div class="price"><b>$98</b>/month</div>
+        <a class="btn btn-secondary" href="https://www.skool.com/origins/about?ref=ea053c11a9b644b2877f0f14f9b979a3" target="_blank" rel="sponsored nofollow noopener">Visit Community</a>
+      </div>
+    </div>
+
+    <div class="rank-card">
+      <div class="rank-num">4</div>
+      <img class="rank-logo" src="/assets/img/benheath.jpg" alt="Ben Heath Meta Ads Academy banner">
+      <div class="rank-main">
+        <span class="chip">Best low-cost course — when it reopens</span>
+        <h3>Ben Heath Meta Ads Academy</h3>
+        <div class="by">By Ben Heath</div>
+        <ul>
+          <li>Structured A-to-Z Meta ads course (112 videos, 28 modules) from a major ads educator</li>
+          <li>Weekly Q&amp;A, and Ben replies to every community post</li>
+          <li>Currently closed to new members — you can't join today</li>
+        </ul>
+      </div>
+      <div class="rank-side">
+        <div class="rec-label">Our Recommendation</div>
+        <div class="rec-stars">★★★★☆</div>
+        <div class="rec-score">3.8</div>
+        <div class="price"><b>$49</b>/month</div>
+        <a class="btn btn-secondary" href="https://www.skool.com/benheath/about?ref=ea053c11a9b644b2877f0f14f9b979a3" target="_blank" rel="sponsored nofollow noopener">View Community</a>
+        <div class="closed-note">Enrollment currently closed</div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="section-h">Side by side</h2>
+  <div class="table-card">
+    <table class="cmp">
+      <thead>
+        <tr>
+          <th class="rowlabel"></th>
+          <th class="col-featured"><img src="/assets/img/blueprint.jpg" alt="">Facebook Ads Blueprint</th>
+          <th><img src="/assets/img/meta-ads-mastery.jpg" alt="">Meta Ads Mastery</th>
+          <th><img src="/assets/img/origins.jpg" alt="">Origins Ecommerce</th>
+          <th><img src="/assets/img/benheath.jpg" alt="">Ben Heath Academy</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th class="rowlabel">Recommendation</th>
+          <td class="col-featured"><b>4.9</b> ★★★★★</td>
+          <td><b>4.4</b> ★★★★☆</td>
+          <td><b>4.2</b> ★★★★☆</td>
+          <td><b>3.8</b> ★★★★☆</td>
+        </tr>
+        <tr>
+          <th class="rowlabel">Price</th>
+          <td class="col-featured"><b>$297/mo</b></td>
+          <td><b>$497/mo</b></td>
+          <td><b>$98/mo</b></td>
+          <td><b>$49/mo</b></td>
+        </tr>
+        <tr>
+          <th class="rowlabel">Best for</th>
+          <td class="col-featured">Ecom brands, beginner → $1M+/mo</td>
+          <td>Advertisers who want near-daily coaching</td>
+          <td>Early-stage Shopify sellers</td>
+          <td>Budget learners</td>
+        </tr>
+        <tr>
+          <th class="rowlabel">Live coaching</th>
+          <td class="col-featured">Weekly Q&amp;As with Sam</td>
+          <td>3 calls/week + same-day video Q&amp;A</td>
+          <td>Group calls with coaches</td>
+          <td>Weekly Q&amp;A with Ben</td>
+        </tr>
+        <tr>
+          <th class="rowlabel">Beyond the course</th>
+          <td class="col-featured">Agency's internal systems &amp; dashboards; transcripts in 50+ languages</td>
+          <td>Copywriting course, guest speakers, AI prompts</td>
+          <td>Vetted supplier</td>
+          <td>Price locked for life</td>
+        </tr>
+        <tr>
+          <th class="rowlabel">Enrollment</th>
+          <td class="col-featured"><b>Open</b></td>
+          <td>Open</td>
+          <td>Open</td>
+          <td>Closed</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="choose">
+    <h2 class="section-h" style="margin-top:0;">Which should you choose?</h2>
+    <ul>
+      <li><b>Running an ecommerce brand and want current, agency-tested Meta strategy?</b> The Facebook Ads Blueprint — the strongest combination of proof, breadth, and price here.</li>
+      <li><b>Want maximum coaching volume and price is no object?</b> Meta Ads Mastery.</li>
+      <li><b>Early on Shopify and need the whole picture, not just ads?</b> Origins Ecommerce.</li>
+      <li><b>Just want the cheapest structured course?</b> Ben Heath's Academy — once enrollment reopens.</li>
+    </ul>
+  </div>
+
+  <div style="margin: 0 0 44px;">
+    <a class="btn btn-primary btn-lg" href="#">Visit The Facebook Ads Blueprint</a>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-links">
+      <a href="/compare/best-meta-ads-skool-communities/">Compare Communities</a>
+      <a href="/review-guidelines/">Review Guidelines</a>
+      <a href="/editorial-policy/">Editorial &amp; AI Policy</a>
+      <a href="/affiliate-disclosure/">Affiliate Disclosure</a>
+      <a href="/privacy/">Privacy Policy</a>
+      <a href="/terms/">Terms of Service</a>
+    </div>
+    <p class="footer-disclaimer"><b>CommunityReviewer is an independent review platform and is not operated by, sponsored by, or otherwise affiliated with Skool.</b> Skool is a trademark of its owner. Community names and logos belong to their respective owners.</p>
+    <p class="footer-disclaimer">Some outbound links on this site are affiliate links — we may earn a commission if you join a community through them. This never affects ratings, reviews, or rankings. <a href="/affiliate-disclosure/">Read our Affiliate Disclosure</a>.</p>
+  </div>
+</footer>
+
+</body>
+</html>
