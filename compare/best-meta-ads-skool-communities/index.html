@@ -327,6 +327,24 @@
 }
 </script>
 <!--/schema-->
+
+<!--conv-->
+<!-- Event snippet for Outbound click conversion page -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18380563777/XcjjCPuapd8cEMHKxLxE',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+<!--/conv-->
 </head>
 <body>
 
@@ -368,7 +386,7 @@
         <div class="rec-stars">★★★★★</div>
         <div class="rec-score">4.9</div>
         <div class="price"><b>$297</b>/month</div>
-        <a class="btn btn-primary" href="https://www.skool.com/facebook/about" target="_blank" rel="noopener">Visit Community</a>
+        <a class="btn btn-primary" href="https://www.skool.com/facebook/about" onclick="gtag_report_conversion()" target="_blank" rel="noopener">Visit Community</a>
       </div>
     </div>
 
@@ -390,7 +408,7 @@
         <div class="rec-stars">★★★★☆</div>
         <div class="rec-score">4.4</div>
         <div class="price"><b>$497</b>/month</div>
-        <a class="btn btn-secondary" href="https://www.skool.com/meta-ads-mastery/about" target="_blank" rel="nofollow noopener">Visit Community</a>
+        <a class="btn btn-secondary" href="https://www.skool.com/meta-ads-mastery/about" onclick="gtag_report_conversion()" target="_blank" rel="nofollow noopener">Visit Community</a>
       </div>
     </div>
 
@@ -412,7 +430,7 @@
         <div class="rec-stars">★★★★☆</div>
         <div class="rec-score">4.2</div>
         <div class="price"><b>$98</b>/month</div>
-        <a class="btn btn-secondary" href="https://www.skool.com/origins/about?ref=ea053c11a9b644b2877f0f14f9b979a3" target="_blank" rel="sponsored nofollow noopener">Visit Community</a>
+        <a class="btn btn-secondary" href="https://www.skool.com/origins/about?ref=ea053c11a9b644b2877f0f14f9b979a3" onclick="gtag_report_conversion()" target="_blank" rel="sponsored nofollow noopener">Visit Community</a>
       </div>
     </div>
 
@@ -434,7 +452,7 @@
         <div class="rec-stars">★★★★☆</div>
         <div class="rec-score">3.8</div>
         <div class="price"><b>$49</b>/month</div>
-        <a class="btn btn-secondary" href="https://www.skool.com/benheath/about?ref=ea053c11a9b644b2877f0f14f9b979a3" target="_blank" rel="sponsored nofollow noopener">View Community</a>
+        <a class="btn btn-secondary" href="https://www.skool.com/benheath/about?ref=ea053c11a9b644b2877f0f14f9b979a3" onclick="gtag_report_conversion()" target="_blank" rel="sponsored nofollow noopener">View Community</a>
         <div class="closed-note">Enrollment currently closed</div>
       </div>
     </div>
@@ -491,10 +509,10 @@
         </tr>
         <tr class="cta-row">
           <th class="rowlabel"></th>
-          <td class="col-featured"><a class="btn btn-primary btn-sm" href="https://www.skool.com/facebook/about" target="_blank" rel="noopener">Visit</a></td>
-          <td><a class="btn btn-outline btn-sm" href="https://www.skool.com/meta-ads-mastery/about" target="_blank" rel="nofollow noopener">Visit</a></td>
-          <td><a class="btn btn-outline btn-sm" href="https://www.skool.com/origins/about?ref=ea053c11a9b644b2877f0f14f9b979a3" target="_blank" rel="sponsored nofollow noopener">Visit</a></td>
-          <td><a class="btn btn-outline btn-sm" href="https://www.skool.com/benheath/about?ref=ea053c11a9b644b2877f0f14f9b979a3" target="_blank" rel="sponsored nofollow noopener">Visit</a></td>
+          <td class="col-featured"><a class="btn btn-primary btn-sm" href="https://www.skool.com/facebook/about" onclick="gtag_report_conversion()" target="_blank" rel="noopener">Visit</a></td>
+          <td><a class="btn btn-outline btn-sm" href="https://www.skool.com/meta-ads-mastery/about" onclick="gtag_report_conversion()" target="_blank" rel="nofollow noopener">Visit</a></td>
+          <td><a class="btn btn-outline btn-sm" href="https://www.skool.com/origins/about?ref=ea053c11a9b644b2877f0f14f9b979a3" onclick="gtag_report_conversion()" target="_blank" rel="sponsored nofollow noopener">Visit</a></td>
+          <td><a class="btn btn-outline btn-sm" href="https://www.skool.com/benheath/about?ref=ea053c11a9b644b2877f0f14f9b979a3" onclick="gtag_report_conversion()" target="_blank" rel="sponsored nofollow noopener">Visit</a></td>
         </tr>
       </tbody>
     </table>
