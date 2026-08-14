@@ -1,1 +1,15 @@
 .DS_Store
+
+# --- added by setup ---
+.env
+.env.*
+!.env.example
+!.env.sample
+credentials.json
+token.json
+client_secret*.json
+service-account*.json
+*.pem
+*.key
+Thumbs.db
+node_modules/
